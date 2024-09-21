@@ -1,0 +1,18 @@
+---
+title: "Final Project"
+author: "Chi Hoang Yen Tran"
+date: "11/22/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r importData}
+sample <- read.csv("C://Users/Admin/Documents/Class Documents/FALL 2021/STAT 212/Final Sample.csv") 
+```
+
+```{r Boxplot}
+boxplot(sample$Memory.time ~ sample$Handedness, las=2)
+```
